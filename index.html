@@ -15,6 +15,13 @@
         <header>
             <h1>Welcome to My Website</h1>
             <p>Computer Science Student | Software Development | Technology Enthusiast</p>
+
+            <button onclick="showWelcome()">Welcome Message</button>
+            <button onclick="changeBackground()">Change Background</button>
+            <button onclick="showDate()">Show Today's Date</button>
+
+            <p id="dateDisplay"></p>
+
         </header>
 
         <nav>
@@ -26,34 +33,36 @@
         <main>
 
             <section>
+
                 <h2>Introduction</h2>
 
                 <p>
-                    Hello! My name is Mia. I am currently studying Computer Science with a concentration
-                    in Software Development. This website was created as part of my CST255 course and
-                    highlights my interests, career goals, and learning journey.
+                    Hello! My name is Mia. I am currently studying Computer Science with a concentration in Software Development.
+                    This website was created for my CST255 course and demonstrates the HTML, CSS, and JavaScript skills
+                    I have learned throughout the semester.
                 </p>
 
                 <p>
-                    I enjoy learning about programming, web development, and cybersecurity. Technology
-                    continues to evolve every day, and I enjoy expanding my knowledge through hands-on
-                    projects and coursework.
+                    I enjoy learning about programming, web development, and cybersecurity. Every project helps me
+                    improve my technical skills while preparing me for a future career in technology.
                 </p>
 
                 <p>
-                    Throughout this course, I will continue improving this website by adding new features,
-                    better organization, and more advanced web development techniques.
+                    As I continue learning, I plan to expand this website with additional features and interactive
+                    elements to create a better user experience.
                 </p>
 
-                <img src="images/coding.jpg"
-                     alt="Person coding on a computer">
+                <img src="images/coding.jpg" alt="Person coding on a computer">
+
             </section>
 
             <section>
 
                 <h2>Skills I Want to Learn</h2>
 
-                <ul>
+                <button onclick="toggleSkills()">Show / Hide Skills</button>
+
+                <ul id="skillsList">
                     <li>HTML</li>
                     <li>CSS</li>
                     <li>JavaScript</li>
@@ -71,6 +80,8 @@
         </footer>
 
     </div>
+
+    <script src="script.js"></script>
 
 </body>
 
